@@ -56,7 +56,14 @@ function Index() {
       <br />
       <h2>The date according to Node.js (TypeScript) is:</h2>
       <p>{date ? date : "Loading date..."}</p>
-      <form onSubmit={submit}></form>
+      <form onSubmit={submit}>
+        <label htmlFor="email">Email Address</label>
+        <input id="email" type="email" name="email" />
+        <textarea id="message" name="message" />
+        <button type="submit" disabled={state.submitting}>
+          Submit
+        </button>
+      </form>
     </main>
   );
 }
