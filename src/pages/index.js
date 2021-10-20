@@ -60,7 +60,7 @@ function Index() {
         <label htmlFor="email">Email Address</label>
         <input id="email" type="email" name="email" />
         <textarea id="message" name="message" />
-        <button type="submit" disabled={state.submitting}>
+        <button type="submit" disabled={formState.submitting}>
           Submit
         </button>
       </form>
