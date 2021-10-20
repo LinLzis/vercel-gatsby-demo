@@ -4,7 +4,7 @@ import { useForm } from "@formspree/react";
 import "../styles/index.css";
 
 function Index() {
-  const [formState, submit] = useForm(process.env.NEXT_PUBLIC_NEW_FORM);
+  const [formState, submit] = useForm('xyylawwb');
   const [date, setDate] = useState(null);
 
   if (formState.succeeded) {
